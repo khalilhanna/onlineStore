@@ -1,0 +1,207 @@
+body {
+  /* box-sizing: border-box; */
+  margin: 0 auto;
+  font-family: "Bitter", serif;
+}
+
+/***********************************************************************
+ *  Nav Bar
+ **********************************************************************/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #302f2d;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+}
+
+.push {
+  float: right;
+  margin-left: auto;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar:hover {
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+    inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+}
+
+.fa-shopping-cart {
+  color: #ddd;
+}
+/***********************************************************************
+ *  Cover
+ **********************************************************************/
+.container {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.cover {
+  width: 35%;
+}
+
+/***********************************************************************
+ *  Grid Panel
+ **********************************************************************/
+.cards {
+  margin: 0 auto;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  /* font-family: sans-serif; */
+}
+
+.card {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card_image {
+  width: 100%;
+  display: block;
+}
+
+.card_content {
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  /* background: #fafafa; */
+}
+
+.top {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+input {
+  border: none;
+  /* display: inline; */
+  font-family: inherit;
+  font-size: inherit;
+  padding: none;
+  width: auto;
+  font-size: 16px;
+  outline: none;
+}
+
+.bottom {
+  margin-bottom: 0;
+  color: rgb(121, 121, 121);
+}
+
+.price_cart {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eeeeee;
+  font-size: 0.9em;
+  border-bottom: 2px solid #cccccc;
+}
+.add_to_cart {
+  border: none;
+  outline: none;
+}
+
+i {
+  color: rgb(109, 107, 103);
+}
+
+i:hover {
+  /* color: rgb(197, 116, 10); */
+  color: red;
+  cursor: pointer;
+}
+
+/* .card { */
+/*height: 300px; /* [1.1] Set it as per your need */
+/*overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+/* } */
+
+/* [2] Transition property for smooth transformation of images */
+i,
+.card img {
+  transition: transform 0.5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+i:hover,
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/***********************************************************************
+ *  Footer
+ **********************************************************************/
+footer {
+  text-align: center;
+  background-color: #302f2d;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px;
+}

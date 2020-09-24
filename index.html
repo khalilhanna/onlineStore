@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Grocery Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./products/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./sign_up/styles/navbar.css">
+    <link rel="stylesheet" type="text/css" href="./home/styles/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <nav class="sticky navbar">
+      <a href="#">Home</a>
+      <a href="./About/about.html">About</a>
+      <div class="dropdown">
+        <button class="dropbtn">Products
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./products/fruits.html">Fruits & Vegetables</a>
+          <a href="./products/meat.html">Meat & Poultry</a>
+          <a href="./products/dairy.html">Dairy & Eggs</a>
+          <a href="./products/pantry.html">From the Pantry</a>
+        </div>
+      </div>
+      <a href="./check_out/cart.html">Check out</a>
+      <a href="./sign_up/sign_up.html" class="push">Sign up</a>
+      <a href="./check_out/cart.html" class="cart_no"><i class="fas
+          fa-shopping-cart"></i><span>&nbsp;</span></a>
+    </nav>
+    <div id="page-container">
+      <div id="content-wrap">
+        <img src="./home/images/grocery_store.jpg" title="grocery store"
+          alt="grocerystore" class="welcome" />
+        <p id="welcome">Welcome to the grocery store</p>
+      </div>
+    </div>
+    <footer id="zone" class="zone">
+      <small>&copy; Copyright 2020 || Design by : Khalil Hanna - Mohammadhossein
+        Heshmati - Manojkumar Patel - Athanasios Garliaris</small>
+    </footer>
+    <script src="./check_out/scripts/cart.js"></script>
+    <script src="https://kit.fontawesome.com/c8d796304e.js"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.main {
+  width: 780px;
+  max-width: 100%;
+  background-color: #fff;
+  margin-top: 50px;
+}
+
+.image {
+  padding: 40px 0px 10px;
+}
+
+img {
+  height: 475px;
+  margin: 0 auto;
+  display: block;
+}
+
+.text {
+  margin: 0 30px;
+}
+h2 {
+  text-align: center;
+}
+
+.container {
+  background-color: #fff;
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  padding: 15px 40px;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+.form {
+  padding: 0px 40px 30px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+#terms {
+  display: inline-block;
+  width: 5%;
+  margin: 0;
+  padding: 0;
+}
+
+#checkLabel {
+  font-size: 12px;
+}
+
+.form-control.success input {
+  border-color: #49b4df;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 40px;
+  right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #49b4df;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-control.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form button {
+  /* background-color: #2e4666;
+  border: 2px solid #2e4666; */
+
+  background-color: #302f2d;
+  border: 2px solid #302f2d;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  width: 100%;
+  padding: 10px;
+}

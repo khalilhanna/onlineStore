@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/navbar.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bitter&display=swap"
+            rel="stylesheet">
+        <script defer="defer" src="scripts/scripts.js"></script>
+    </head>
+    <body>
+        <nav class="sticky navbar">
+            <a href="../index.html">Home</a>
+            <a href="../About/about.html">About</a>
+            <div class="dropdown">
+                <button class="dropbtn">Products
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="../products/fruits.html">Fruits & Vegetables</a>
+                    <a href="../products/meat.html">Meat & Poultry</a>
+                    <a href="../products/dairy.html">Diarly Products</a>
+                    <a href="../products/pantry.html">Pantry</a>
+                </div>
+            </div>
+            <a href="../check_out/cart.html">Check out</a>
+            <a href="#" class="push">Sign up</a>
+            <a href="../check_out/cart.html" class="cart_no"><i class="fas
+                    fa-shopping-cart"></i><span>&nbsp;</span></a>
+        </nav>
+        <div class="main">
+            <div class="image">
+                <img src="images/healthy.jpg" alt="Food Image" />
+            </div>
+            <div class="text">
+                <h2>Where You Get a Fresh Food</h2>
+                <p>To get waht you need of our fresh foods you need to create
+                    your account to be able to place your order online. also you
+                    can subscribe to get our special offers. </p>
+            </div>
+            <div class="container">
+                <div class="header">
+                    <h2>Create Account</h2>
+                </div>
+                <form class="form" id="form">
+                    <div class="form-control">
+                        <lable>Name</lable>
+                        <input type="text" placeholder="Your Name"
+                            id="username">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
+                        <lable>Email</lable>
+                        <input type="text" placeholder="Email" id="email">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
+                        <lable>Password</lable>
+                        <input type="password" placeholder="Password"
+                            id="password">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
+                        <lable>Confirm Password</lable>
+                        <input type="password" placeholder="Confirm Password"
+                            id="password2">
+                        <i class="fa fa-check-circle"></i>
+                        <i class="fa fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control check">
+                        <input type="checkbox" name="terms" id="terms">
+                        <lable id="checkLabel">I accept Terms of Service</lable>
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control check">
+                        <input type="checkbox" name="terms" id="terms">
+                        <lable id="checkLabel">Subscribe to receive our offers</lable>
+                    </div>
+
+
+                    <button type="submit" id="fSubmit">Sign up</button>
+                </form>
+            </div>
+        </div>
+
+        <script src="../check_out/scripts/cart.js"></script>
+        <script src="https://kit.fontawesome.com/c8d796304e.js"
+            crossorigin="anonymous"></script>
+    </body>
+</html>
